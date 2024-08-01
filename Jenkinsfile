@@ -26,7 +26,7 @@ pipeline{
                 sh "pwd"
             }
         }
-        stage("make a directory"){
+        stage("make a new directory"){
             steps{
                 sh "mkdir jenkins-demo/new_folder"
             }
