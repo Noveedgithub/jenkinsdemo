@@ -28,7 +28,7 @@ pipeline{
         }
         stage("make a new directory"){
             steps{
-                sh "mkdir new_folder"
+                sh "mkdir new_folder || true"
             }
         }
         stage("move file to new directory"){
