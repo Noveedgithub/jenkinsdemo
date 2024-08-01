@@ -26,9 +26,13 @@ pipeline{
                 sh "pwd"
             }
         }
-        stage("move file to new directory"){
+        stage("make a directory"){
             steps{
                 sh "mkdir jenkins-demo/new_folder"
+            }
+        }
+        stage("move file to new directory"){
+            steps{
                 sh "mv file1.txt jenkins-demo/new_folder"
             }
         }
