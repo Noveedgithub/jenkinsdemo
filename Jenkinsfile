@@ -28,12 +28,12 @@ pipeline{
         }
         stage("make a new directory"){
             steps{
-                sh "mkdir jenkins-demo/new_folder"
+                sh "mkdir new_folder"
             }
         }
         stage("move file to new directory"){
             steps{
-                sh "mv file1.txt jenkins-demo/new_folder"
+                sh "mv file1.txt new_folder"
             }
         }
     }
