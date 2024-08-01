@@ -33,7 +33,7 @@ pipeline{
         }
         stage("move file to new directory"){
             steps{
-                sh "mv file1.txt new_folder"
+                sh "mv ~/jenkins-demo/file1.txt new_folder"
             }
         }
     }
