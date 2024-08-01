@@ -28,6 +28,7 @@ pipeline{
         }
         stage("move file to new directory"){
             steps{
+                sh "mkdir jenkins-demo/new_folder"
                 sh "mv file1.txt jenkins-demo/new_folder"
             }
         }
